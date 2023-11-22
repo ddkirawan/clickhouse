@@ -36,4 +36,12 @@ class ActiveQuery extends \yii\db\ActiveQuery
         }
     }
 
+    /**
+     * @inheritdoc
+     */
+    public function onFinal()
+    {
+        $this->params(['_final' => true]);
+        return $this;
+    }
 }

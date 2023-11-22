@@ -18,6 +18,8 @@ class Schema extends \yii\db\mysql\Schema
      * UUID columnd data type
      */
     const TYPE_UUID = 'UUID';
+    const TYPE_TINYINT = 'Int8';
+    const TYPE_JSON = 'String';
 
     public $columnSchemaClass = 'bashkarev\clickhouse\ColumnSchema';
 
